@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:my_app/ui/views/home/home_viewmodel.dart';
+import 'package:my_app/features/home/home_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends StackedView<HomeViewModel> {

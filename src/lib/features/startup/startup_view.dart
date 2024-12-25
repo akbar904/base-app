@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:gap/gap.dart';
-import 'package:my_app/ui/views/startup/startup_viewmodel.dart';
+import 'package:my_app/features/startup/startup_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
 class StartupView extends StackedView<StartupViewModel> {

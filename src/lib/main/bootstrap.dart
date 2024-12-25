@@ -6,7 +6,7 @@ import 'package:my_app/app/app.bottomsheets.dart';
 import 'package:my_app/app/app.dialogs.dart';
 import 'package:my_app/app/app.locator.dart';
 import 'package:my_app/models/enums/flavor.dart';
-import 'package:my_app/utils/flavors/flavors.dart';
+import 'package:my_app/utils/flavors.dart';
 
 Future<void> bootstrap({
   required FutureOr<Widget> Function() builder,
