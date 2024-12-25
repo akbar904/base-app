@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/app/app.router.dart';
 import 'package:my_app/l10n/supported_locales.dart';
-import 'package:my_app/observer/screen_observer.dart';
 import 'package:my_app/features/app/app_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
@@ -40,7 +39,6 @@ class _App extends ViewModelWidget<AppViewModel> {
           navigatorKey: StackedService.navigatorKey,
           navigatorObservers: [
             StackedService.routeObserver,
-            ScreenObserver(),
           ],
           localizationsDelegates: localizationsDelegates,
           supportedLocales: supportedLocales,
