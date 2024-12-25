@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/app/app.router.dart';
 import 'package:my_app/l10n/supported_locales.dart';
-import 'package:my_app/ui/common/app_colors.dart';
+import 'package:my_app/shared/app_colors.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 class AppView extends StatelessWidget {

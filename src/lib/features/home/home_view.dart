@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/features/home/home_viewmodel.dart';
-import 'package:my_app/ui/common/app_colors.dart';
-import 'package:my_app/ui/common/text_style.dart';
-import 'package:my_app/ui/common/ui_helpers.dart';
+import 'package:my_app/shared/app_colors.dart';
+import 'package:my_app/shared/text_style.dart';
+import 'package:my_app/shared/ui_helpers.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeView extends StackedView<HomeViewModel> {

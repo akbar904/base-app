@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/ui/common/app_colors.dart';
-import 'package:my_app/ui/common/ui_helpers.dart';
+import 'package:my_app/shared/app_colors.dart';
+import 'package:my_app/shared/ui_helpers.dart';
 
 // Heading Text Styles
 TextStyle heading1Style(BuildContext context) => TextStyle(
