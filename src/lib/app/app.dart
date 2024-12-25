@@ -1,4 +1,4 @@
-import 'package:my_app/ui/bottom_sheets/notice/notice_sheet.dart';
+import 'package:my_app/shared/ui/bottom_sheets/notice_sheet.dart';
 import 'package:my_app/ui/dialogs/info_alert/info_alert_dialog.dart';
 import 'package:my_app/features/home/home_view.dart';
 import 'package:my_app/features/startup/startup_view.dart';

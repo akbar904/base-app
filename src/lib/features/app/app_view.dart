@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/app/app.router.dart';
 import 'package:my_app/l10n/supported_locales.dart';
-import 'package:my_app/features/app/app_viewmodel.dart';
-import 'package:stacked/stacked.dart';
+import 'package:my_app/ui/common/app_colors.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 class AppView extends StatelessWidget {
@@ -10,20 +9,15 @@ class AppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ViewModelBuilder.reactive(
-      viewModelBuilder: AppViewModel.new,
-      builder: (_, __, ___) {
-        return const _App();
-      },
-    );
+    return const _App();
   }
 }
 
-class _App extends ViewModelWidget<AppViewModel> {
+class _App extends StatelessWidget {
   const _App();
 
   @override
-  Widget build(BuildContext context, AppViewModel viewModel) {
+  Widget build(BuildContext context) {
     return MediaQuery.withClampedTextScaling(
       maxScaleFactor: 1.5,
       minScaleFactor: 0.5,
@@ -42,6 +36,10 @@ class _App extends ViewModelWidget<AppViewModel> {
           ],
           localizationsDelegates: localizationsDelegates,
           supportedLocales: supportedLocales,
+          theme: ThemeData(
+            primaryColor: kcPrimaryColor,
+            scaffoldBackgroundColor: kcBackgroundColor,
+          ),
         ),
       ),
     );

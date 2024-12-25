@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:gap/gap.dart';
 import 'package:my_app/features/startup/startup_viewmodel.dart';
+import 'package:my_app/ui/common/app_colors.dart';
+import 'package:my_app/ui/common/ui_helpers.dart';
+import 'package:my_app/ui/common/text_style.dart';
 import 'package:stacked/stacked.dart';
 
 class StartupView extends StackedView<StartupViewModel> {
@@ -13,29 +15,19 @@ class StartupView extends StackedView<StartupViewModel> {
     StartupViewModel viewModel,
     Widget? child,
   ) {
-    return const Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'MyApp',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900),
+              'Let\'s Get This Party Started! 🎉',
+              style: heading1Style(context),
             ),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text('Loading ...', style: TextStyle(fontSize: 16)),
-                Gap(10),
-                SizedBox(
-                  width: 16,
-                  height: 16,
-                  child: CircularProgressIndicator(
-                    color: Colors.black,
-                    strokeWidth: 6,
-                  ),
-                ),
-              ],
+            verticalSpaceLarge,
+            const CircularProgressIndicator(
+              color: kcPrimaryColor,
             ),
           ],
         ),
